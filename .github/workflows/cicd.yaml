@@ -84,7 +84,7 @@ jobs:
           -d "{
             \"content\": \"✅ Deploy SUCCESS 🚀\",
             \"embeds\": [{
-              \"title\": \"WaysHub Backend Deployed\",
+              \"title\": \"WaysHub Frontend Deployed\",
               \"description\": \"Deployment berhasil ke server 🎉\",
               \"color\": 3066993,
               \"fields\": [
@@ -108,7 +108,7 @@ jobs:
           -d "{
             \"content\": \"❌ Deploy FAILED\",
             \"embeds\": [{
-              \"title\": \"WaysHub Deployment Failed\",
+              \"title\": \"WaysHub Frontend Deployment Failed\",
               \"description\": \"Cek GitHub Actions untuk detail error ⚠️\",
               \"color\": 15158332,
               \"fields\": [
