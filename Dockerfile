@@ -13,7 +13,7 @@ EXPOSE 3000
 CMD ["pm2-runtime", "start", "ecosystem.config.js"]
 
 # Builder
-FROM node:18-alpine AS builder
+FROM node:14-alpine AS builder
 
 WORKDIR /app
 
@@ -23,7 +23,7 @@ RUN npm install
 COPY . .
 
 # Production
-FROM node:18-alpine
+FROM node:14-alpine
 
 WORKDIR /app
 
