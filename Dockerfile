@@ -31,8 +31,6 @@ RUN npm install -g pm2
 
 COPY --from=builder /app /app
 
-RUN npm prune --omit=dev
-
 EXPOSE 3000
 
 CMD ["pm2-runtime", "start", "ecosystem.config.js"]
