@@ -27,6 +27,7 @@ FROM node:14-alpine
 
 WORKDIR /app
 
+RUN npm install
 RUN npm install -g pm2
 
 COPY --from=builder /app /app
